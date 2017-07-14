@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+body {
+background-color: #f0f0f0;
+ top: 0;
+ left: 0;
+ min-width: 755px;
+ margin: 50px 298px;
+}
+
+/*==============================Шапка============================*/
+.main_bock {
+	background-color: #fff;
+	z-index: 99;
+}
+
+.row {
+	margin-bottom: 35px;
+	margin-top: -34px;
+	padding: 5px 25px;
+}
+
+img {
+	float: left;
+	border-radius: 100%;
+	margin-top: 25px;
+
+	 -webkit-border-radius;
+	 -moz-border-radius;
+}
+.my_form {
+	display: flex;
+}
+
+.text {
+	background-color: rgba(255,255,255,0.2);
+	width: 520px;
+	height: 34px;
+	border: none;
+	border-bottom: 2px solid #acacaa;
+	padding: 15px 10px 0 5px;
+	margin-left: 25px;
+	font-size: 12pt;
+	font-family: Roboto, sans-serif;
+	color: #aeaead;
+	position: relative;
+	z-index: 99;
+}
+.images {
+	position: absolute;
+	margin-left: 408px;
+	margin-top: 56px;
+}
+
+/*==============================Секция Формы============================*/
+
+.checking {
+	border-top: 2px solid #f9f8f7;
+	border-bottom: 2px solid #f9f8f7;
+	background-color: #fefdfc;
+	width: 100%;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	height: 250px;
+	display: inline-block;
+	
+}
+
+h3 {
+	margin: 30px 0 20px 0;
+	padding-left: 5px;
+	color: #0A0A0A;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18pt;
+	font-weight: 500; 
+}
+
+.form {
+	margin-top: -37px;
+}
+
+.form1 {
+	float: left;
+	padding-left: 10px;
+
+}
+
+.form2 {
+  float: left;
+  margin-left: 90px
+}
+.form3 {
+float: left;
+margin-left: 91px;
+padding-left: 16px;
+
+}
+.form4  {
+	float: right;
+	margin: -177px 17px 0 120px;
+	box-sizing: border-box;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+	color: #9e9e9e;
+	position: relative;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 34px;
+	box-sizing: border-box;
+}
+input[type="checkbox"] {
+	width: 0;
+	height: 0;
+	display: none;
+
+}
+label > span {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 10px solid #f2f2f2;
+	margin-right: 10px;
+	border-radius: 5px;
+	transition: all 0.3s;
+	box-sizing: border-box;
+
+}
+input:checked + label > span {
+	border: 10px solid #0093D7;
+	animation: bounce 250ms;
+
+}
+input:checked + label > span::before {
+   content: "";
+   position: absolute;
+   top: 6.5px;
+   left: 4px;
+   border-right: 3px solid transparent;
+   border-bottom: 3px solid transparent;
+   transform: rotate(45deg);
+   transform-origin: 0% 100%;
+   animation: checked-box 125ms 250ms forwards;
+}
+@keyframes checked-box {
+	0%{
+		width: 0;
+		height: 0;
+		border-color: #fff;
+		transform: translate(0,0) rotate(45deg);
+	}
+	33%{
+		width: 4px;
+		height: 0;
+		border-color: #fff;
+		transform: translate(0,0) rotate(45deg);
+	}
+	100%{
+		width: 4px;
+		height: 8px;
+		border-color: #fff;
+		transform: translate(0,-8px) rotate(45deg);
+	}
+}
+@keyframes bounce {
+	0%{
+		transform: scale(1);
+	}
+	33%{
+		transform: scale(.70);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+
+
+
+/*==============================Footer============================*/
+
+.main_footer {
+	width: 100%;
+	height: 250px;
+	background-color: #fefefd;
+	border-top: 1px solid #f2f2f2;
+}
+
+.main_footer p {
+	text-align: left;
+	margin-top: 48px;
+	padding-right: 118px;
+	font-family: Roboto,Arial,sans-serif; 
+	font-weight: 500;
+	color: #040404;
+	font-size: 17pt;
+	float: right;
+	margin-right: 43px;
+}
+.main_footer p span {
+	font-size: 45pt;
+	font-weight: 900;
+	color: #0093d7;
+	line-height: 75px;
+}
+
+.center {
+	border-radius: 0;
+  margin-top: 46px;
+  margin-left: -36px;
+}
+.right {
+	border-radius: 0;
+	margin-top: 74px;
+	margin-left: 25px;
+}
+.left {
+	border-radius: 0;
+	margin-top: 72px;
+	margin-left: -41px;
+}
+.arrow {
+	border-radius: 0;
+	margin-left: -198px;
+	margin-top: 130px;
+}
