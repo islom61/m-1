@@ -6,4 +6,4 @@
 
 2. run in console `npm i && bower i`
 
-3. `gulp`
+3. `gulp`"# m-1" 
